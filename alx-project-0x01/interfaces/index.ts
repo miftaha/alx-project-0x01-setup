@@ -18,6 +18,8 @@
 // ]
 
 // const interfaceData = ['userId: number;', 'title: string;', 'body: string;']
+// const modalp = ['onSubmit: (post: UserProps) => void;']
+// const in=["id?: number;"]
 
 export interface PostData {
   id?: number
