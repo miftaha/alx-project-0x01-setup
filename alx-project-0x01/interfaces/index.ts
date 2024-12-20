@@ -33,31 +33,53 @@ export interface PostProps {
   id: number
 }
 
+interface go {
+  lat: string
+  lng: string
+}
+
+interface address {
+  street: string
+  suite: string
+  city: string
+  zipcode: string
+  go: go
+}
+
+interface company {
+  name: string
+  catchPhrase: string
+  bs: string
+}
+
 export interface UserProps {
   id: number
   username: string
   name: string
   email: string
-  address: {
-    street: string
-    suite: string
-    city: string
-    zipcode: string
-    geo: {
-      lat: string
-      lng: string
-    }
-  }
+  address: address
   phone: string
   website: string
-  company: {
-    name: string
-    catchPhrase: string
-    bs: string
-  }
+  company: company
 }
 
 export interface PostModalProps {
   onClose: () => void
   onSubmit: (post: PostData) => void
+}
+
+export interface UserData {
+  id: number
+  username: string
+  name: string
+  email: string
+  address: address
+  phone: string
+  website: string
+  company: company
+}
+
+export interface UserModalProps {
+  onClose: () => void
+  onSubmit: (post: UserData) => void
 }
