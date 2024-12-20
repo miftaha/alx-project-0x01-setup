@@ -5,11 +5,7 @@ import { UserData } from '@/interfaces'
 import UserModal from '@/components/common/UserModal'
 import { useState } from 'react'
 
-interface UsersPageProps {
-  posts: UserProps[]
-}
-
-const Users: React.FC<UsersPageProps> = ({ posts }) => {
+const Users: React.FC<UserProps[]> = ({ posts }) => {
   const [isModalOpen, setModalOpen] = useState(false)
   const [post, setPost] = useState<UserData | null>(null)
 
