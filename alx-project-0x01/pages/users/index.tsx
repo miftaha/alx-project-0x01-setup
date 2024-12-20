@@ -10,7 +10,6 @@ interface UsersPageProps {
 }
 
 const Users: React.FC<UsersPageProps> = ({ posts }) => {
-  console.log(posts)
   const [isModalOpen, setModalOpen] = useState(false)
   const [post, setPost] = useState<UserData | null>(null)
 
