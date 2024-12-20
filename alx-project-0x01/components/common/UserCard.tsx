@@ -34,7 +34,7 @@ const UserCard: React.FC<UserProps> = ({
         <div className="text-sm mt-4">
           <p className="font-semibold">Company:</p>
           <p>{company.name}</p>
-          <p className="italic">"{company.catchPhrase}"</p>
+          <p className="italic">&quot;{company.catchPhrase}&quot;</p>
           <p>{company.bs}</p>
         </div>
       </div>

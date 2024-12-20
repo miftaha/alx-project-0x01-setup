@@ -1,27 +1,27 @@
-const modalProp = [
-  'onClose: () => void;',
-  'onSubmit: (post: PostData) => void;',
-]
+// const modalProp = [
+//   'onClose: () => void;',
+//   'onSubmit: (post: PostData) => void;',
+// ]
 
-const postProps = [
-  'userId: number',
-  'title: string',
-  'body: string',
-  'id: number',
-]
+// const postProps = [
+//   'userId: number',
+//   'title: string',
+//   'body: string',
+//   'id: number',
+// ]
 
-const userDataProps = [
-  'id: number;',
-  'username: string;',
-  'street: string;',
-  'catchPhrase: string;',
-]
+// const userDataProps = [
+//   'id: number;',
+//   'username: string;',
+//   'street: string;',
+//   'catchPhrase: string;',
+// ]
 
-const interfaceData = ['userId: number;', 'title: string;', 'body: string;']
+// const interfaceData = ['userId: number;', 'title: string;', 'body: string;']
 
 export interface PostData {
-  userId: number
   id?: number
+  userId: number
   title: string
   body: string
 }
