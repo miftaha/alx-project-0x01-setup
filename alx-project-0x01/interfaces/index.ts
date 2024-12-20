@@ -1,14 +1,14 @@
 export interface PostProps {
   userId: number
-  id: number
   title: string
   body: string
+  id: number
 }
 
 export interface UserProps {
   id: number
-  name: string
   username: string
+  name: string
   email: string
   address: {
     street: string
