@@ -1,3 +1,9 @@
+const userDataProps = [
+  'id: number;',
+  'username: string;',
+  'street: string;',
+  'catchPhrase: string;',
+]
 const interfaceData = ['userId: number;', 'title: string;', 'body: string;']
 
 export interface PostProps {
