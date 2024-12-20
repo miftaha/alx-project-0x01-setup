@@ -19,6 +19,13 @@ const userDataProps = [
 
 const interfaceData = ['userId: number;', 'title: string;', 'body: string;']
 
+export interface PostData {
+  userId: number
+  id?: number
+  title: string
+  body: string
+}
+
 export interface PostProps {
   userId: number
   title: string
@@ -48,13 +55,6 @@ export interface UserProps {
     catchPhrase: string
     bs: string
   }
-}
-
-export interface PostData {
-  userId: number
-  id?: number
-  title: string
-  body: string
 }
 
 export interface PostModalProps {
